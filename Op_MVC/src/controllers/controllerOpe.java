@@ -3,12 +3,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import model.ModelOpe;
 import view.viewOpe;
-
 public class controllerOpe implements ActionListener
 {
     private final ModelOpe modelOpe;
     private final viewOpe viewOpe;
-    
     public controllerOpe(viewOpe viewOpe, ModelOpe modelOpe)
     {
         this.viewOpe = viewOpe;
@@ -21,7 +19,7 @@ public class controllerOpe implements ActionListener
     {
        if(e.getSource()==viewOpe.jb_calculator)
        {
-           modelOpe.setOpe("tu resultado es ; ");
+           modelOpe.setOpe("numero ");
            viewOpe.jl_numero1.setText(modelOpe.getMessage());
            viewOpe.jl_numero2.setText(modelOpe.getMessage());
        }
